@@ -7,7 +7,9 @@ Built with the Plain-Academic template (Bootstrap 3.3.6), hosted on GitHub Pages
 Pages: index.html, research.html, cv.html, group.html, talks.html, teaching.html, outreach.html, news.html, joinus.html
 
 ## Workflow
-After the user approves an edit, immediately commit and push to GitHub without asking:
+**FUNDAMENTAL: Always ask for explicit permission before committing or pushing.** Never commit or push automatically, even after an edit is made.
+
+When the user approves a commit, use:
   git add <file> && git commit -m "<message>" && git push origin master
 
 ## news.html
@@ -23,6 +25,13 @@ Sections in order:
 2. **Visiting fellows** — longer stays (weeks to months). Format: `Name, Role, Institution, Month–Month Year`
 3. **Short-term visitors** — brief visits. Format: `Name, Role, Institution, Month Year`. Newest first.
 4. **Past members** — former group members, with thesis links where applicable.
+
+If the user does not provide the role or institution for a visitor, search the web to find it before asking.
+
+## External resources
+- You have permission to fetch content from https://the-center-of-gravity.com to retrieve news, thesis, or event details.
+- You have permission to fetch content from https://strong-gr.com to retrieve event or project details.
+- You have permission to fetch content from https://nbi.ku.dk to retrieve news, event, or project details.
 
 ## HTML style
 - Keep the `class="paper" words="add, your, keywords, here"` attribute on all `<li>` elements.
