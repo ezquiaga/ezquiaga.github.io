@@ -28,6 +28,9 @@ Sections in order:
 
 If the user does not provide the role or institution for a visitor, search the web to find it before asking.
 
+## Center of Gravity news check
+At the start of every conversation about updating the website, fetch https://the-center-of-gravity.com to check for recent news that could be relevant (new group members, awards, papers, events, etc.) and proactively suggest additions.
+
 ## External resources
 - You have permission to fetch content from https://the-center-of-gravity.com to retrieve news, thesis, or event details.
 - You have permission to fetch content from https://strong-gr.com to retrieve event or project details.
