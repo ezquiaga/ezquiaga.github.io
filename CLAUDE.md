@@ -4,7 +4,7 @@
 Personal academic website for Jose Maria Ezquiaga (Associate Professor, Niels Bohr Institute).
 Built with the Plain-Academic template (Bootstrap 3.3.6), hosted on GitHub Pages.
 
-Pages: index.html, research.html, cv.html, group.html, talks.html, teaching.html, outreach.html, news.html, joinus.html
+Pages: index.html, research.html, cv.html, group.html, talks.html, teaching.html, outreach.html, events.html, news.html, joinus.html
 
 ## Workflow
 **FUNDAMENTAL: Always ask for explicit permission before committing or pushing.** Never commit or push automatically, even after an edit is made.
@@ -27,6 +27,14 @@ Sections in order:
 4. **Past members** — former group members, with thesis links where applicable.
 
 If the user does not provide the role or institution for a visitor, search the web to find it before asking.
+
+## events.html
+Gallery of posters of events Jose has organized, 3 per row, **newest first**.
+- The user drops original posters (PDF/PNG/JPG) in `images/posters/`. These are **not published** (`.gitignore` excludes everything in `images/posters/` except `web/`).
+- For each new poster, make a web copy: 700px tall JPG, quality ~82, saved to `images/posters/web/<name>.jpg` (PDFs: render the first page, e.g. with `sips -s format png`, then resize with PIL).
+- Add a `<figure>` block in the correct date position, copying the format of existing ones: poster wrapped in `<a href="EVENT_URL" target="_blank">`, `draggable="false"` on the `<img>`, and a `<figcaption>` with `<b>Title</b><br/>Place, Month Year`.
+- Take title, place and date from the poster itself. For the link, prefer the Center of Gravity features page (`https://the-center-of-gravity.com/features/...`) when one exists; otherwise the official event website.
+- Check the layout with a headless Chrome screenshot before asking to commit.
 
 ## Center of Gravity news check
 At the start of every conversation about updating the website, fetch https://the-center-of-gravity.com to check for recent news that could be relevant (new group members, awards, papers, events, etc.) and proactively suggest additions.
