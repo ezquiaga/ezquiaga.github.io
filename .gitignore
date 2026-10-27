@@ -1,2 +1,4 @@
 .DS_Store
 *.swp
+images/posters/*
+!images/posters/web/
