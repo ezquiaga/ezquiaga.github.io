@@ -14,6 +14,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <style>
+    .news-row { display: flex; flex-wrap: wrap; }
+    .news-row:before, .news-row:after { display: none; }
+    .news-card { margin-bottom: 30px; min-width: 0; }
+    @media (max-width: 767px) { .news-card { width: 100%; } }
+    .news-card img { width: 100%; aspect-ratio: 22 / 15; object-fit: cover; display: block; margin-bottom: 8px; }
+    .news-date { color: #777; font-size: 13px; margin-bottom: 4px; }
+    .news-title { font-weight: bold; font-size: 16px; color: #222; }
+    .news-title:hover { color: #337ab7; text-decoration: none; }
+    .news-extra { font-size: 13px; margin-top: 4px; }
+    .news-year { margin-top: 10px; }
+  </style>
 </head>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -66,130 +78,349 @@
 
             <!-- Entries Column -->
             <div class="col-md-8">
-	<!-- Main Image -->
-                <img class="img-responsive" src="images/gws_cover_0.5.jpeg" alt=""><br>
-
-                <div style="margin-top:3%; text-align:justify;">
-
+                <h2 id="news">News</h2>
+                <h3 class="news-year">2026</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/the-cog-makes-waves-at-kulturnatten/" target="_blank"><img src="images/news/cog-kulturnatten-2026.jpg" alt="The CoG Makes Waves at Kulturnatten" draggable="false"></a>
+                    <div class="news-date">Nov. 3, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/the-cog-makes-waves-at-kulturnatten/" target="_blank">The CoG Makes Waves at Kulturnatten</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/connecting-the-multi-messenger-lensing-community-at-the-lorentz-center/" target="_blank"><img src="images/news/lorentz-lensing-2026.jpg" alt="Connecting the Multi-Messenger Lensing Community at the Lorentz Center" draggable="false"></a>
+                    <div class="news-date">Oct. 28, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/connecting-the-multi-messenger-lensing-community-at-the-lorentz-center/" target="_blank">Connecting the Multi-Messenger Lensing Community at the Lorentz Center</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/features/the-school-on-gravity-from-commotion-to-locomotion-2027/" target="_blank"><img src="images/news/school-on-gravity-2027.jpg" alt="Save the date! The School on Gravity 2027: From Commotion to Locomotion, June 21–25, 2027" draggable="false"></a>
+                    <div class="news-date">Oct. 7, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/features/the-school-on-gravity-from-commotion-to-locomotion-2027/" target="_blank">Save the date! The School on Gravity 2027: From Commotion to Locomotion, June 21–25, 2027</a>
+                    <div class="news-extra"><a href="https://the-center-of-gravity.com/features/the-school-on-gravity-from-commotion-to-locomotion-2027/registration/" target="_blank">Registration</a> deadline Feb. 1, 2027</div>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/exchange-of-researchers-working-on-gravitational-physics/" target="_blank"><img src="images/news/cog-short-term-visits-2026.jpg" alt="Call for short-term scientific visits to the Center of Gravity" draggable="false"></a>
+                    <div class="news-date">Oct. 1, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/exchange-of-researchers-working-on-gravitational-physics/" target="_blank">Call for short-term scientific visits to the Center of Gravity</a>
+                    <div class="news-extra">Deadline Nov. 30, 2026</div>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://ligo.org/wp-content/uploads/2026/09/LIGO-magazine-issue29.pdf" target="_blank"><img src="images/news/ligo-magazine-comic-2026.jpg" alt="Black Holes comic project featured in the LIGO Magazine" draggable="false"></a>
+                    <div class="news-date">Sept. 24, 2026</div>
+                    <a class="news-title" href="https://ligo.org/wp-content/uploads/2026/09/LIGO-magazine-issue29.pdf" target="_blank">Black Holes comic project featured in the LIGO Magazine</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://www.fbbva.es/noticias/fallados-premios-fisica-rsef-fundacion-bbva-2026/" target="_blank"><img src="images/news/bbva-rsef-prize-2026.jpg" alt="Awarded the BBVA Foundation – Spanish Royal Society of Physics 2026 Young Investigator Prize" draggable="false"></a>
+                    <div class="news-date">Sept. 16, 2026</div>
+                    <a class="news-title" href="https://www.fbbva.es/noticias/fallados-premios-fisica-rsef-fundacion-bbva-2026/" target="_blank">Awarded the BBVA Foundation – Spanish Royal Society of Physics 2026 Young Investigator Prize</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://science.ku.dk/english/culture-night/" target="_blank"><img src="images/news/culture-night-2026.jpg" alt="Make Waves Across the Universe: join us at the Copenhagen Culture Night on Oct. 9" draggable="false"></a>
+                    <div class="news-date">Sept. 11, 2026</div>
+                    <a class="news-title" href="https://science.ku.dk/english/culture-night/" target="_blank">Make Waves Across the Universe: join us at the Copenhagen Culture Night on Oct. 9</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://erc.europa.eu/news-events/news/erc-2026-starting-grants-results" target="_blank"><img src="images/news/erc-starting-grant-2026.jpg" alt="Awarded an ERC Starting Grant!" draggable="false"></a>
+                    <div class="news-date">Sept. 3, 2026</div>
+                    <a class="news-title" href="https://erc.europa.eu/news-events/news/erc-2026-starting-grants-results" target="_blank">Awarded an ERC Starting Grant!</a>
+                    <div class="news-extra"><a href="https://the-center-of-gravity.com/news/jose-m-ezquiaga-awarded-15m-to-explore-the-furthest-binary-black-holes/" target="_blank">CoG news</a>, <a href="https://simonscbhsg.com/news/" target="_blank">Simons Collab. news</a>, <a href="https://pkunet-shared.ku.dk/nyhedsrum/nyheder/Sider/KU-forskere-modtager-ERC-Starting-Grants.aspx" target="_blank">KU news</a></div>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/the-black-hole-week-ends-with-a-blast/" target="_blank"><img src="images/news/black-hole-week-blast-2026.jpg" alt="The Black Hole Week Ends With a Blast!" draggable="false"></a>
+                    <div class="news-date">Aug. 30, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/the-black-hole-week-ends-with-a-blast/" target="_blank">The Black Hole Week Ends With a Blast!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://bhcomics.github.io/download/" target="_blank"><img src="images/news/black-holes-comic-out-2026.jpg" alt="The Black Holes comic is out! Download it here" draggable="false"></a>
+                    <div class="news-date">Aug. 26, 2026</div>
+                    <a class="news-title" href="https://bhcomics.github.io/download/" target="_blank">The Black Holes comic is out! Download it here</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://doi.org/10.1103/5292-948q" target="_blank"><img src="images/news/gw231123-lensing-prdl-2026.jpg" alt="Discovering gravitational waveform distortions from lensing: A deep dive into GW231123, published in PRD Letters" draggable="false"></a>
+                    <div class="news-date">July 13, 2026</div>
+                    <a class="news-title" href="https://doi.org/10.1103/5292-948q" target="_blank">Discovering gravitational waveform distortions from lensing: A deep dive into GW231123, published in PRD Letters</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/from-motion-to-commotion-cog-hosts-its-first-school-on-gravity/" target="_blank"><img src="images/news/school-on-gravity-2026.jpg" alt="From Motion to Commotion, CoG Hosts its First School on Gravity" draggable="false"></a>
+                    <div class="news-date">July 9, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/from-motion-to-commotion-cog-hosts-its-first-school-on-gravity/" target="_blank">From Motion to Commotion, CoG Hosts its First School on Gravity</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/lorena-awarded-ddsa-postdoc-fellowship/" target="_blank"><img src="images/news/lorena-ddsa-fellowship-2026.jpg" alt="Lorena Magaña Zertuche awarded one of the six DDSA Postdoc Fellowships for 2026. Congratulations!" draggable="false"></a>
+                    <div class="news-date">June 23, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/lorena-awarded-ddsa-postdoc-fellowship/" target="_blank">Lorena Magaña Zertuche awarded one of the six DDSA Postdoc Fellowships for 2026. Congratulations!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/maddalena-reggio-successfully-defends-her-thesis/" target="_blank"><img src="images/news/maddalena-reggio-thesis-2026.jpg" alt="Maddalena Reggio successfully defended her bachelor thesis on gravitational wave lensing and dark matter!" draggable="false"></a>
+                    <div class="news-date">June 19, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/maddalena-reggio-successfully-defends-her-thesis/" target="_blank">Maddalena Reggio successfully defended her bachelor thesis on gravitational wave lensing and dark matter!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://www.lorentzcenter.nl/multi-messenger-lensing-program.html" target="_blank"><img src="images/news/lorentz-workshop-announcement-2026.jpg" alt="Multi-messenger Lensing Workshop at the Lorentz Center in Oct. 2026" draggable="false"></a>
+                    <div class="news-date">May 4, 2026</div>
+                    <a class="news-title" href="https://www.lorentzcenter.nl/multi-messenger-lensing-program.html" target="_blank">Multi-messenger Lensing Workshop at the Lorentz Center in Oct. 2026</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/features/black-hole-week-2026/" target="_blank"><img src="images/news/black-hole-week-announcement-2026.jpg" alt="Announcing the Black Hole Week 2026!" draggable="false"></a>
+                    <div class="news-date">May 4, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/features/black-hole-week-2026/" target="_blank">Announcing the Black Hole Week 2026!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://youtu.be/A7_nQeAob2E" target="_blank"><img src="images/news/gwtc4-lensing-webinar-2026.jpg" alt="GWTC-4 Lensing Webinar is now available online" draggable="false"></a>
+                    <div class="news-date">Apr. 23, 2026</div>
+                    <a class="news-title" href="https://youtu.be/A7_nQeAob2E" target="_blank">GWTC-4 Lensing Webinar is now available online</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/documents/532/Juno_Chun_Lung_Chan_thesis.pdf" target="_blank"><img src="images/news/juno-chan-phd-2026.jpg" alt="Juno Chan successfully defended his PhD thesis (enjoy it here!)" draggable="false"></a>
+                    <div class="news-date">Mar. 25, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/documents/532/Juno_Chun_Lung_Chan_thesis.pdf" target="_blank">Juno Chan successfully defended his PhD thesis (enjoy it here!)</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/jose-m-ezquiaga-awarded-lars-kann-rasmussen-prize-2026/" target="_blank"><img src="images/news/lars-kann-rasmussen-prize-2026.jpg" alt="Awarded the Lars Kann-Rasmussen Prize 2026!" draggable="false"></a>
+                    <div class="news-date">Feb. 26, 2026</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/jose-m-ezquiaga-awarded-lars-kann-rasmussen-prize-2026/" target="_blank">Awarded the Lars Kann-Rasmussen Prize 2026!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://ligo.org/science-summaries/O4aLensing/" target="_blank"><img src="images/news/lvk-o4a-lensing-2026.jpg" alt="LIGO-Virgo-KAGRA completes searches for lensing signatures in the first part of the fourth observing run" draggable="false"></a>
+                    <div class="news-date">Feb. 25, 2026</div>
+                    <a class="news-title" href="https://ligo.org/science-summaries/O4aLensing/" target="_blank">LIGO-Virgo-KAGRA completes searches for lensing signatures in the first part of the fourth observing run</a>
+                  </div>
                 </div>
 
-            <!-- News -->
-                <h2 id="news">News</h2>
+                <h3 class="news-year">2025</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://www.srf.ch/audio/wissenschaftsmagazin/immer-weniger-gletscher-wird-das-wasser-knapp?id=AUDI20251004_NR_0013" target="_blank"><img src="images/news/srf-interview-2025.jpg" alt="Interview for the Swiss National Radio on the 10th anniversary of the discovery of gravitational waves" draggable="false"></a>
+                    <div class="news-date">Oct. 4, 2025</div>
+                    <a class="news-title" href="https://www.srf.ch/audio/wissenschaftsmagazin/immer-weniger-gletscher-wird-das-wasser-knapp?id=AUDI20251004_NR_0013" target="_blank">Interview for the Swiss National Radio on the 10th anniversary of the discovery of gravitational waves</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://news.ku.dk/all_news/2025/09/colossal-collisions-in-space-send-shockwaves-through-the-universe-gravitational-waves-break-records-with-new-observations/" target="_blank"><img src="images/news/ku-colossal-collisions-2025.jpg" alt="Colossal collisions in space send shockwaves through the universe: gravitational waves break records with new observations" draggable="false"></a>
+                    <div class="news-date">Sept. 15, 2025</div>
+                    <a class="news-title" href="https://news.ku.dk/all_news/2025/09/colossal-collisions-in-space-send-shockwaves-through-the-universe-gravitational-waves-break-records-with-new-observations/" target="_blank">Colossal collisions in space send shockwaves through the universe: gravitational waves break records with new observations</a>
+                    <div class="news-extra">by Kristian Bjørn-Hansen</div>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/events/celebrating-the-first-decade-of-gravitational-wave-astronomy/" target="_blank"><img src="images/news/gw-decade-celebration-2025.jpg" alt="We are celebrating the first decade of Gravitational Wave Astronomy. Event on Sept. 15 at 4pm!" draggable="false"></a>
+                    <div class="news-date">Sept. 7, 2025</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/events/celebrating-the-first-decade-of-gravitational-wave-astronomy/" target="_blank">We are celebrating the first decade of Gravitational Wave Astronomy. Event on Sept. 15 at 4pm!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://github.com/ezquiaga/a-premiere-on-gw-cosmology" target="_blank"><img src="images/news/gw-cosmology-course-2025.jpg" alt="&quot;A premiere on Gravitational Wave Cosmology&quot; course materials now online, including video recordings!" draggable="false"></a>
+                    <div class="news-date">Aug. 1, 2025</div>
+                    <a class="news-title" href="https://github.com/ezquiaga/a-premiere-on-gw-cosmology" target="_blank">"A premiere on Gravitational Wave Cosmology" course materials now online, including video recordings!</a>
+                    <div class="news-extra"><a href="https://www.ictp-saifr.org/ictptriestesc2025/" target="_blank">Video recordings</a></div>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/associate-professor-jose-m-ezquiaga-receives-2025-iupap-general-relativity-and-gravitation-early-career-prize/" target="_blank"><img src="images/news/iupap-prize-gr24-2025.jpg" alt="Receiving the 2025 IUPAP General Relativity and Gravitation Early Career Prize at the GR24 Meeting in Glasgow" draggable="false"></a>
+                    <div class="news-date">July 21, 2025</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/associate-professor-jose-m-ezquiaga-receives-2025-iupap-general-relativity-and-gravitation-early-career-prize/" target="_blank">Receiving the 2025 IUPAP General Relativity and Gravitation Early Career Prize at the GR24 Meeting in Glasgow</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/welcome-gw231123-the-most-massive-binary-black-hole-observed-through-gravitational-waves/" target="_blank"><img src="images/news/gw231123-2025.jpg" alt="Welcome GW231123, the Most Massive Binary Black Hole Observed Through Gravitational Waves" draggable="false"></a>
+                    <div class="news-date">July 14, 2025</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/welcome-gw231123-the-most-massive-binary-black-hole-observed-through-gravitational-waves/" target="_blank">Welcome GW231123, the Most Massive Binary Black Hole Observed Through Gravitational Waves</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/" target="_blank"><img src="images/news/cog-inaugurated-2025.jpg" alt="The Center of Gravity (CoG) has now been inaugurated!" draggable="false"></a>
+                    <div class="news-date">July 7, 2025</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/" target="_blank">The Center of Gravity (CoG) has now been inaugurated!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://the-center-of-gravity.com/news/black-holes-now-go-into-comic-books/" target="_blank"><img src="images/news/black-holes-comic-funded-2025.jpg" alt="Explaining Black Holes, a public outreach comic project, gets funded by Carlsberg" draggable="false"></a>
+                    <div class="news-date">July 7, 2025</div>
+                    <a class="news-title" href="https://the-center-of-gravity.com/news/black-holes-now-go-into-comic-books/" target="_blank">Explaining Black Holes, a public outreach comic project, gets funded by Carlsberg</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="http://www.isgrg.org/IUPAPprize.php" target="_blank"><img src="images/news/iupap-prize-2025.jpg" alt="Awarded the 2025 IUPAP Early Career Prize from the International Society on General Relativity and Gravitation!" draggable="false"></a>
+                    <div class="news-date">June 13, 2025</div>
+                    <a class="news-title" href="http://www.isgrg.org/IUPAPprize.php" target="_blank">Awarded the 2025 IUPAP Early Career Prize from the International Society on General Relativity and Gravitation!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://github.com/lenscat/lenscat" target="_blank"><img src="images/news/lenscat-release-2025.jpg" alt="New release of lenscat: 10 times more lenses. Enjoy it here!" draggable="false"></a>
+                    <div class="news-date">May 16, 2025</div>
+                    <a class="news-title" href="https://github.com/lenscat/lenscat" target="_blank">New release of lenscat: 10 times more lenses. Enjoy it here!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://strong-gr.com/news/cosmic-whispers-made-loud-by-intervening-matter/" target="_blank"><img src="images/news/cosmic-whispers-prl-2025.jpg" alt="Cosmic whispers made LOUD by intervening matter: group paper published in PRL" draggable="false"></a>
+                    <div class="news-date">Apr. 15, 2025</div>
+                    <a class="news-title" href="https://strong-gr.com/news/cosmic-whispers-made-loud-by-intervening-matter/" target="_blank">Cosmic whispers made LOUD by intervening matter: group paper published in PRL</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <img src="images/news/associate-professor-2025.jpg" alt="Promoted to Associate Professor!" draggable="false">
+                    <div class="news-date">Mar. 2025</div>
+                    <span class="news-title">Promoted to Associate Professor!</span>
+                  </div>
+                </div>
 
-  <p>Some highlights:</p>
+                <h3 class="news-year">2024</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://strong-gr.com/news/strong-at-ligo-virgo-kagra-barcelona/" target="_blank"><img src="images/news/lvk-barcelona-2024.jpg" alt="The group travels to Barcelona for the LVK September meeting" draggable="false"></a>
+                    <div class="news-date">Oct. 17, 2024</div>
+                    <a class="news-title" href="https://strong-gr.com/news/strong-at-ligo-virgo-kagra-barcelona/" target="_blank">The group travels to Barcelona for the LVK September meeting</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://strong-gr.com/black-holes-inside-and-out/" target="_blank"><img src="images/news/black-holes-inside-out-2024.jpg" alt="Black Holes Inside and Out conference in August!" draggable="false"></a>
+                    <div class="news-date">Feb. 28, 2024</div>
+                    <a class="news-title" href="https://strong-gr.com/black-holes-inside-and-out/" target="_blank">Black Holes Inside and Out conference in August!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://indico.nbi.ku.dk/event/2028/" target="_blank"><img src="images/news/nordic-winter-school-2024.jpg" alt="Nordic Winter School on Multi-Messenger Astronomy" draggable="false"></a>
+                    <div class="news-date">Jan. 29, 2024</div>
+                    <a class="news-title" href="https://indico.nbi.ku.dk/event/2028/" target="_blank">Nordic Winter School on Multi-Messenger Astronomy</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://nbia.nbi.ku.dk/news/2024/assistant-professor-jose-ezquiaga-brings-nbia-into-the-ligo-collaboration/" target="_blank"><img src="images/news/nbi-joins-ligo.jpg" alt="NBI joins the LIGO Scientific Collaboration!" draggable="false"></a>
+                    <div class="news-date">Jan. 5, 2024</div>
+                    <a class="news-title" href="https://nbia.nbi.ku.dk/news/2024/assistant-professor-jose-ezquiaga-brings-nbia-into-the-ligo-collaboration/" target="_blank">NBI joins the LIGO Scientific Collaboration!</a>
+                    <div class="news-extra"><a href="https://www.ligo.org" target="_blank">LIGO Scientific Collaboration</a></div>
+                  </div>
+                </div>
 
-  <strong>2026</strong><br/>
-  <ul>
-    <li class="paper" words="add, your, keywords, here">Save the date! <a href="https://the-center-of-gravity.com/features/the-school-on-gravity-from-commotion-to-locomotion-2027/">The School on Gravity 2027: From Commotion to Locomotion</a>, June 21–25, 2027 at the Niels Bohr Institute. <a href="https://the-center-of-gravity.com/features/the-school-on-gravity-from-commotion-to-locomotion-2027/registration/">Registration</a> deadline Feb. 1, 2027</li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://the-center-of-gravity.com/news/the-cog-makes-waves-at-kulturnatten/">The CoG Makes Waves at Kulturnatten</a></li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://the-center-of-gravity.com/news/connecting-the-multi-messenger-lensing-community-at-the-lorentz-center/">Connecting the Multi-Messenger Lensing Community at the Lorentz Center</a></li>
-    <li class="paper" words="add, your, keywords, here">Call for <a href="https://the-center-of-gravity.com/news/exchange-of-researchers-working-on-gravitational-physics/">short-term scientific visits</a> to the Center of Gravity. Deadline Nov. 30, 2026</li>
-    <li class="paper" words="add, your, keywords, here">Black Holes comic project featured in the <a href="https://ligo.org/wp-content/uploads/2026/09/LIGO-magazine-issue29.pdf">LIGO Magazine</a></li>
-    <li class="paper" words="add, your, keywords, here">Excited to announce that I was awarded the <a href="https://www.fbbva.es/noticias/fallados-premios-fisica-rsef-fundacion-bbva-2026/">BBVA Foundation - Spanish Royal Society of Physics 2026 Young Investigator Prize</a></li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://science.ku.dk/english/culture-night/">Make Waves Across the Universe</a>. Join us at the Copenhagen Culture Night on Oct. 9</li>
-    <li class="paper" words="add, your, keywords, here">Big news! I was awarded an <a href="https://erc.europa.eu/news-events/news/erc-2026-starting-grants-results">ERC Starting Grant</a>! (<a href="https://the-center-of-gravity.com/news/jose-m-ezquiaga-awarded-15m-to-explore-the-furthest-binary-black-holes/">CoG news</a>, <a href="https://simonscbhsg.com/news/">Simons Collab. news</a>, <a href="https://pkunet-shared.ku.dk/nyhedsrum/nyheder/Sider/KU-forskere-modtager-ERC-Starting-Grants.aspx">KU news</a>)</li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://the-center-of-gravity.com/news/the-black-hole-week-ends-with-a-blast/">The Black Hole Week Ends With a Blast!</a></li>
-    <li class="paper" words="add, your, keywords, here">The Black Holes comic is out! <a href="https://bhcomics.github.io/download/">Download it here</a>.</li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://doi.org/10.1103/5292-948q">Discovering gravitational waveform distortions from lensing: A deep dive into GW231123</a> published in PRDL</li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://the-center-of-gravity.com/news/from-motion-to-commotion-cog-hosts-its-first-school-on-gravity/">From Motion to Commotion, CoG Hosts its First School on Gravity</a></li>
-    <li class="paper" words="add, your, keywords, here">Lorena Magaña Zertuche awarded one of the six <a href="https://the-center-of-gravity.com/news/lorena-awarded-ddsa-postdoc-fellowship/">DDSA Postdoc Fellowships</a> for 2026. Congratulations!</li>
-    <li class="paper" words="add, your, keywords, here">Maddalena Reggio successfully defended her <a href="https://the-center-of-gravity.com/news/maddalena-reggio-successfully-defends-her-thesis/">bachelor thesis</a> on gravitational wave lensing and dark matter!</li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://www.lorentzcenter.nl/multi-messenger-lensing-program.html">Multi-messenger Lensing Workshop</a> at the Lorentz Center in Oct. 2026</li>
-    <li class="paper" words="add, your, keywords, here">Announcing the <a href="https://the-center-of-gravity.com/features/black-hole-week-2026/">Black Hole Week 2026</a>!</li>
-    <li class="paper" words="add, your, keywords, here">GWTC-4 Lensing Webinar is now available <a href="https://youtu.be/A7_nQeAob2E">online</a></li>
-    <li class="paper" words="add, your, keywords, here">Juno Chan successfully defended his PhD thesis (enjoy it <a href="https://the-center-of-gravity.com/documents/532/Juno_Chun_Lung_Chan_thesis.pdf">here!</a>)</li>
-    <li class="paper" words="add, your, keywords, here">Awarded the <a href="https://the-center-of-gravity.com/news/jose-m-ezquiaga-awarded-lars-kann-rasmussen-prize-2026/">Lars Kann-Rasmussen Prize 2026</a>!</li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://ligo.org/science-summaries/O4aLensing/">LIGO-Virgo-KAGRA</a> completes searches for lensing signatures in the first part of the fourth observing run </li>
-  </ul>
+                <h3 class="news-year">2023</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://nbi.ku.dk/english/research_infrastructure/tycho-supercomputer/" target="_blank"><img src="images/news/tycho-supercomputer-2023.jpg" alt="New supercomputer Tycho has arrived!" draggable="false"></a>
+                    <div class="news-date">Oct. 27, 2023</div>
+                    <a class="news-title" href="https://nbi.ku.dk/english/research_infrastructure/tycho-supercomputer/" target="_blank">New supercomputer Tycho has arrived!</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://astronomyontap.org/event/astronomy-on-tap-copenhagen-black-holes/" target="_blank"><img src="images/news/astronomy-on-tap-2023.jpg" alt="Jose M. Ezquiaga and Vitor Cardoso speak at Astronomy on Tap – Black Holes" draggable="false"></a>
+                    <div class="news-date">Oct. 14, 2023</div>
+                    <a class="news-title" href="https://astronomyontap.org/event/astronomy-on-tap-copenhagen-black-holes/" target="_blank">Jose M. Ezquiaga and Vitor Cardoso speak at Astronomy on Tap – Black Holes</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://indico.nbi.ku.dk/event/1645/" target="_blank"><img src="images/news/current-themes-2023.jpg" alt="Niels Bohr Annual Workshop on Current Themes in High Energy Physics, Gravity and Cosmology" draggable="false"></a>
+                    <div class="news-date">Aug. 2023</div>
+                    <a class="news-title" href="https://indico.nbi.ku.dk/event/1645/" target="_blank">Niels Bohr Annual Workshop on Current Themes in High Energy Physics, Gravity and Cosmology</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://strong-gr.com/lisa-in-copenhagen/" target="_blank"><img src="images/news/lisa-fp-copenhagen-2023.jpg" alt="LISA Fundamental Physics Working Group meeting" draggable="false"></a>
+                    <div class="news-date">Aug. 29, 2023</div>
+                    <a class="news-title" href="https://strong-gr.com/lisa-in-copenhagen/" target="_blank">LISA Fundamental Physics Working Group meeting</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://www.ligo.org/science/Publication-O3bLensing/" target="_blank"><img src="images/news/lvk-o3b-lensing-2023.jpg" alt="LIGO-Virgo-KAGRA completes searches for lensing signatures in the full third observing run" draggable="false"></a>
+                    <div class="news-date">Apr. 20, 2023</div>
+                    <a class="news-title" href="https://www.ligo.org/science/Publication-O3bLensing/" target="_blank">LIGO-Virgo-KAGRA completes searches for lensing signatures in the full third observing run</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://strong-gr.com/news/massive-and-high-redshift-galaxies-may-hint-at-primordial-quantum-diffusion/" target="_blank"><img src="images/news/primordial-diffusion-prl-2023.jpg" alt="Massive and high-redshift galaxies may hint at primordial quantum diffusion" draggable="false"></a>
+                    <div class="news-date">Apr. 18, 2023</div>
+                    <a class="news-title" href="https://strong-gr.com/news/massive-and-high-redshift-galaxies-may-hint-at-primordial-quantum-diffusion/" target="_blank">Massive and high-redshift galaxies may hint at primordial quantum diffusion</a>
+                    <div class="news-extra"><a href="https://phys.org/news/2023-04-quantum-fluctuations-early-universe-creation.html" target="_blank">Phys.org</a>, <a href="https://www.agenciasinc.es/Noticias/Asi-se-formaron-objetos-muy-masivos-en-los-primeros-instantes-de-vida-del-universo" target="_blank">Agencia Sinc</a>, <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.121003" target="_blank">PRL</a></div>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://astrobites.org/2023/04/11/gravitational-waves-a-la-general-relativity-or-scrambled/" target="_blank"><img src="images/news/astrobites-2023.jpg" alt="Astrobites highlight: Gravitational Waves, à la General Relativity or Scrambled?" draggable="false"></a>
+                    <div class="news-date">Apr. 11, 2023</div>
+                    <a class="news-title" href="https://astrobites.org/2023/04/11/gravitational-waves-a-la-general-relativity-or-scrambled/" target="_blank">Astrobites highlight: Gravitational Waves, à la General Relativity or Scrambled?</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://veluxfoundations.dk/en/villum-young-investigators-2023" target="_blank"><img src="images/news/villum-young-investigator-2023.jpg" alt="VILLUM Young Investigator Grant" draggable="false"></a>
+                    <div class="news-date">Jan. 23, 2023</div>
+                    <a class="news-title" href="https://veluxfoundations.dk/en/villum-young-investigators-2023" target="_blank">VILLUM Young Investigator Grant</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://indico.nbi.ku.dk/event/1903/" target="_blank"><img src="images/news/nordic-winter-school-2023.jpg" alt="Nordic Winter School on Gravitational Astrophysics" draggable="false"></a>
+                    <div class="news-date">Jan. 2023</div>
+                    <a class="news-title" href="https://indico.nbi.ku.dk/event/1903/" target="_blank">Nordic Winter School on Gravitational Astrophysics</a>
+                  </div>
+                </div>
 
-  <strong>2025</strong><br/>
-  <ul>
-    <li class="paper" words="add, your, keywords, here"><a href="https://www.srf.ch/audio/wissenschaftsmagazin/immer-weniger-gletscher-wird-das-wasser-knapp?id=AUDI20251004_NR_0013">Interview</a> for the Swiss National Radio in connection to the 10th anniversary of the discovery of gravitational waves</li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://news.ku.dk/all_news/2025/09/colossal-collisions-in-space-send-shockwaves-through-the-universe-gravitational-waves-break-records-with-new-observations/">Colossal collisions in space send shockwaves through the universe: Gravitational waves break records with new observations</a> by Kristian Bjørn-Hansen</li>
-    <li class="paper" words="add, your, keywords, here">We are celebrating the first decade of Gravitational Wave Astronomy.  
-      <a href="https://the-center-of-gravity.com/events/celebrating-the-first-decade-of-gravitational-wave-astronomy/">Event on Sept. 15 at 4pm!</a></li>
-    <li class="paper" words="add, your, keywords, here">The <a href="https://the-center-of-gravity.com/">Center of Gravity</a> (CoG) has now been inaugurated! </li>
-    <li class="paper" words="add, your, keywords, here">"A premiere on Gravitational Wave Cosmology" course materials 
-      now <a href="https://github.com/ezquiaga/a-premiere-on-gw-cosmology">online</a>, 
-      including <a href="https://www.ictp-saifr.org/ictptriestesc2025/">video recordings</a> !</li>
-    <li class="paper" words="add, your, keywords, here">2025 IUPAP General Relativity and Gravitation Early Career Prize at <a href="https://the-center-of-gravity.com/news/associate-professor-jose-m-ezquiaga-receives-2025-iupap-general-relativity-and-gravitation-early-career-prize/">GR24 Meeting</a> in Glasgow </li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://the-center-of-gravity.com/news/welcome-gw231123-the-most-massive-binary-black-hole-observed-through-gravitational-waves/">Welcome GW231123</a>, the Most Massive Binary Black Hole Observed Through Gravitational Waves </li>
-    <li class="paper" words="add, your, keywords, here">Explaining Black Holes, a public outreach comic projects gets funded by Carlsberg (more info <a href="https://the-center-of-gravity.com/news/black-holes-now-go-into-comic-books/">here</a>)</li>
-    <li class="paper" words="add, your, keywords, here">Awarded 2025 <a href="http://www.isgrg.org/IUPAPprize.php">IUPAP Early Career Prize</a> from the International Society on General Relativity and Gravitation!  </li>
-    <li class="paper" words="add, your, keywords, here"> New release of lenscat. 10 times more lenses. Enjoy it <a href="https://github.com/lenscat/lenscat">here</a>!</li>
-    <li class="paper" words="add, your, keywords, here">Cosmic whispers made LOUD by intervening matter. Group paper published on <a href="https://strong-gr.com/news/cosmic-whispers-made-loud-by-intervening-matter/">PRL</a> </li>
-    <li class="paper" words="add, your, keywords, here">In March 2025 I was promoted to Associate Professor! </li> 
-  </ul>
-  <strong>2024</strong><br/>
-  <ul>
-    <li class="paper" words="add, your, keywords, here">The group travels to Barcelona for the LVK september meeting (<a href="https://strong-gr.com/news/strong-at-ligo-virgo-kagra-barcelona/">see news</a>) </li>
-    <li class="paper" words="add, your, keywords, here">Black holes Inside and Out <a href="https://strong-gr.com/black-holes-inside-and-out/">conference</a> in August!</li>
-    <li class="paper" words="add, your, keywords, here">Nordic Winter School on Multi-Messenger Astronomy (<a href="https://indico.nbi.ku.dk/event/2028/">school website</a>) </li>
-  </ul>
-   <strong>2023</strong><br/>
-   <ul>
-    <li class="paper" words="add, your, keywords, here">NBI joins the <a href="https://www.ligo.org">LIGO Scientific Collaboration</a>! 
-      (<a href="https://nbia.nbi.ku.dk/news/2024/assistant-professor-jose-ezquiaga-brings-nbia-into-the-ligo-collaboration/">NBIA news</a>)</li>
-    <li class="paper" words="add, your, keywords, here">New supercomputer <a href="https://nbi.ku.dk/english/research_infrastructure/tycho-supercomputer/">Tycho</a> has arrived!</li>
-    <li class="paper" words="add, your, keywords, here">Jose M. Ezquiaga and Vitor Cardoso speak at <a href="https://astronomyontap.org/event/astronomy-on-tap-copenhagen-black-holes/">Astronomy on Tap - Black Holes</a> </li>
-    <li class="paper" words="add, your, keywords, here">Niels Bohr Annual Workshop on Current Themes in High Energy Physics, Gravity and Cosmology 
-      (<a href="https://indico.nbi.ku.dk/event/1645/">conference website</a>) </li>
-    <li class="paper" words="add, your, keywords, here">LISA Fundamental Physics Working Group meeting 
-      (<a href="https://strong-gr.com/lisa-in-copenhagen/">conference website</a>) </li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://www.ligo.org/science/Publication-O3bLensing/">LIGO-Virgo-KAGRA</a> completes searches for lensing signatures in the full third observing run </li>
-    <li class="paper" words="add, your, keywords, here">Massive and high-redshift galaxies may hint at primordial quantum diffusion (<a href="https://phys.org/news/2023-04-quantum-fluctuations-early-universe-creation.html">Phys.org news</a>, 
-      <a href="https://www.agenciasinc.es/Noticias/Asi-se-formaron-objetos-muy-masivos-en-los-primeros-instantes-de-vida-del-universo">noticias agencia Sinc</a>,
-      <a href="https://strong-gr.com/news/massive-and-high-redshift-galaxies-may-hint-at-primordial-quantum-diffusion/">strong news</a> and 
-    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.121003">PRL</a>)</li>
-    <li class="paper" words="add, your, keywords, here"><a href="https://astrobites.org/2023/04/11/gravitational-waves-a-la-general-relativity-or-scrambled/">Astrobites</a> highlight: Gravitational Waves, à la General Relativity or Scrambled? </li>
-     <li class="paper" words="add, your, keywords, here">VILLUM Young Investigator Grant (<a href="https://veluxfoundations.dk/en/villum-young-investigators-2023">see announcement</a>) </li>
-     <li class="paper" words="add, your, keywords, here">Nordic Winter School on Gravitational Astrophysics (<a href="https://indico.nbi.ku.dk/event/1903/">school website</a>) </li>
-   </ul>
+                <h3 class="news-year">2022</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://kicp-workshops.uchicago.edu/2022gw-cosmo/" target="_blank"><img src="images/news/kicp-gw-cosmology-2022.jpg" alt="Workshop &quot;The Quest for Precision Gravitational Wave Cosmology&quot;" draggable="false"></a>
+                    <div class="news-date">Sept. 2022</div>
+                    <a class="news-title" href="https://kicp-workshops.uchicago.edu/2022gw-cosmo/" target="_blank">Workshop "The Quest for Precision Gravitational Wave Cosmology"</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://news.uchicago.edu/story/black-hole-collisions-could-help-us-measure-how-fast-universe-expanding" target="_blank"><img src="images/news/uchicago-standard-sirens-2022.jpg" alt="Black hole collisions could help us measure how fast the universe is expanding" draggable="false"></a>
+                    <div class="news-date">Aug. 15, 2022</div>
+                    <a class="news-title" href="https://news.uchicago.edu/story/black-hole-collisions-could-help-us-measure-how-fast-universe-expanding" target="_blank">Black hole collisions could help us measure how fast the universe is expanding</a>
+                    <div class="news-extra"><a href="https://news.uchicago.edu/story/black-hole-collisions-could-help-us-measure-how-fast-universe-expanding" target="_blank">UChicago news</a>. Related coverage: <a href="https://www.cnet.com/science/space/tracking-black-hole-collisions-could-settle-an-astronomical-dispute/" target="_blank">CNET</a>, <a href="https://www.independent.co.uk/space/black-hole-hubble-constant-universe-expanding-b2147552.html" target="_blank">Independent</a>, <a href="https://www.cronica.com.mx/academia/calcularan-expansion-universo-sirena-espectral.html" target="_blank">Crónica.mx</a></div>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://strong-gr.com/news/jose-mar%C3%ADa-ezquiaga-co-chairs-new-ligo-virgo-kagra-lensing-group/" target="_blank"><img src="images/news/lvk-lensing-cochair-2022.jpg" alt="Co-chair of the new LIGO-Virgo-KAGRA lensing group" draggable="false"></a>
+                    <div class="news-date">June 1, 2022</div>
+                    <a class="news-title" href="https://strong-gr.com/news/jose-mar%C3%ADa-ezquiaga-co-chairs-new-ligo-virgo-kagra-lensing-group/" target="_blank">Co-chair of the new LIGO-Virgo-KAGRA lensing group</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://nbia.nbi.ku.dk/programs/interactions/" target="_blank"><img src="images/news/interactions-fellowship-2022.jpg" alt="Awarded INTERACTIONS Senior Fellowship" draggable="false"></a>
+                    <div class="news-date">2022</div>
+                    <a class="news-title" href="https://nbia.nbi.ku.dk/programs/interactions/" target="_blank">Awarded INTERACTIONS Senior Fellowship</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://nbia.nbi.ku.dk/nbia-events/gravity-seminars/" target="_blank"><img src="images/news/nbia-gravity-seminars-2022.jpg" alt="New NBIA Gravity Seminar series" draggable="false"></a>
+                    <div class="news-date">2022</div>
+                    <a class="news-title" href="https://nbia.nbi.ku.dk/nbia-events/gravity-seminars/" target="_blank">New NBIA Gravity Seminar series</a>
+                  </div>
+                </div>
 
+                <h3 class="news-year">2021</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://www.ligo.org/science/Publication-O3aLensing/" target="_blank"><img src="images/news/lvk-o3a-lensing-2021.jpg" alt="LIGO/Virgo first search for gravitational wave lensing" draggable="false"></a>
+                    <div class="news-date">Aug. 19, 2021</div>
+                    <a class="news-title" href="https://www.ligo.org/science/Publication-O3aLensing/" target="_blank">LIGO/Virgo first search for gravitational wave lensing</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://kavlicosmo.uchicago.edu/news/article/jumping-the-gap-to-probe-large-black-holes-by-susanna-kohler-aas/" target="_blank"><img src="images/news/aas-mass-gap-2021.jpg" alt="AAS highlight on work with Daniel Holz on binary black hole mergers above the pair-instability supernova mass gap" draggable="false"></a>
+                    <div class="news-date">May 11, 2021</div>
+                    <a class="news-title" href="https://kavlicosmo.uchicago.edu/news/article/jumping-the-gap-to-probe-large-black-holes-by-susanna-kohler-aas/" target="_blank">AAS highlight on work with Daniel Holz on binary black hole mergers above the pair-instability supernova mass gap</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://kavlicosmo.uchicago.edu/news/article/ripples-in-space-time-could-provide-clues-to-missing-components-of-the-universe-uchicago-news/" target="_blank"><img src="images/news/uchicago-lensing-beyond-gr-2021.jpg" alt="UChicago news on work with Miguel Zumalacárregui on new signatures of gravitational wave lensing beyond general relativity" draggable="false"></a>
+                    <div class="news-date">2021</div>
+                    <a class="news-title" href="https://kavlicosmo.uchicago.edu/news/article/ripples-in-space-time-could-provide-clues-to-missing-components-of-the-universe-uchicago-news/" target="_blank">UChicago news on work with Miguel Zumalacárregui on new signatures of gravitational wave lensing beyond general relativity</a>
+                  </div>
+                </div>
 
-    <strong>2022</strong><br/>
-    <ul>
-      <li class="paper" words="add, your, keywords, here">Awarded INTERACTIONS Senior Fellowship (<a href="https://nbia.nbi.ku.dk/programs/interactions/">NBIA site</a>)</li>
-      <li class="paper" words="add, your, keywords, here">New NBIA Gravity Seminar series (<a href="https://nbia.nbi.ku.dk/nbia-events/gravity-seminars/">past/future events</a>)</li>
-      <li class="paper" words="add, your, keywords, here">Workshop "The quest for precision Gravitational Wave Cosmology"(<a href="https://kicp-workshops.uchicago.edu/2022gw-cosmo/">KICP workshop</a>)</li>
-      <li class="paper" words="add, your, keywords, here"><a href="https://news.uchicago.edu/story/black-hole-collisions-could-help-us-measure-how-fast-universe-expanding">Black hole collisions could help us measure how fast the universe is expanding</a> (UChicago news)</li>
-      <ul>
-        <li class="paper" words="add, your, keywords, here">Related news coverage: <a href="https://www.cnet.com/science/space/tracking-black-hole-collisions-could-settle-an-astronomical-dispute/">CNET</a>, <a href="https://www.independent.co.uk/space/black-hole-hubble-constant-universe-expanding-b2147552.html">Independent-co.uk</a>, <a href="https://www.cronica.com.mx/academia/calcularan-expansion-universo-sirena-espectral.html">Cronica.mx</a></li>
-      </ul>
-      <li class="paper" words="add, your, keywords, here"><a href="https://strong-gr.com/news/jose-mar%C3%ADa-ezquiaga-co-chairs-new-ligo-virgo-kagra-lensing-group/">Co-chair of the LIGO-Virgo-KAGRA new lensing group</a></li>
-    </ul>
+                <h3 class="news-year">2020</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://rsef.es/images/Fisica/ActaPremiosDFTPfinal_2019.pdf" target="_blank"><img src="images/news/rsef-best-thesis-2020.jpg" alt="Best thesis in theoretical physics from the Spanish Royal Society of Physics" draggable="false"></a>
+                    <div class="news-date">2020</div>
+                    <a class="news-title" href="https://rsef.es/images/Fisica/ActaPremiosDFTPfinal_2019.pdf" target="_blank">Best thesis in theoretical physics from the Spanish Royal Society of Physics</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://www.funcas.es/convocatorias-premios-efq/" target="_blank"><img src="images/news/funcas-prize-2020.jpg" alt="Enrique Fuentes Quintana Prize for the best thesis in STEM (Fundación Funcas)" draggable="false"></a>
+                    <div class="news-date">2020</div>
+                    <a class="news-title" href="https://www.funcas.es/convocatorias-premios-efq/" target="_blank">Enrique Fuentes Quintana Prize for the best thesis in STEM (Fundación Funcas)</a>
+                  </div>
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://uam.es/EscuelaDoctorado/(es_ES)-Premios-_Extraordinarios/1446833384738.htm?language=es_ES&amp;nodepath=Premios%20extraordinarios" target="_blank"><img src="images/news/uam-doctorate-prize-2020.jpg" alt="Extraordinary Doctorate Prize from UAM" draggable="false"></a>
+                    <div class="news-date">2020</div>
+                    <a class="news-title" href="https://uam.es/EscuelaDoctorado/(es_ES)-Premios-_Extraordinarios/1446833384738.htm?language=es_ES&amp;nodepath=Premios%20extraordinarios" target="_blank">Extraordinary Doctorate Prize from UAM</a>
+                  </div>
+                </div>
 
-		<strong>2021</strong><br/>
-                <ul>
-		<li class="paper" words="add, your, keywords, here"><a href="https://www.ligo.org/science/Publication-O3aLensing/">LIGO/Virgo</a> first search for gravitational wave lensing </li>
+                <h3 class="news-year">2019</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program/2019-nhfp-fellows" target="_blank"><img src="images/news/nasa-einstein-fellowship-2019.jpg" alt="Awarded NASA Einstein Fellowship (NHFP 2019 class)" draggable="false"></a>
+                    <div class="news-date">2019</div>
+                    <a class="news-title" href="https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program/2019-nhfp-fellows" target="_blank">Awarded NASA Einstein Fellowship (NHFP 2019 class)</a>
+                  </div>
+                </div>
 
-                <li class="paper" words="add, your, keywords, here"><a href="https://kavlicosmo.uchicago.edu/news/article/jumping-the-gap-to-probe-large-black-holes-by-susanna-kohler-aas/">AAS highlight</a> about work with Daniel Holz studying the science with binary black hole mergers above the pair instability supernova mass gap </li>
+                <h3 class="news-year">2018</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <img src="images/news/sparrho-prize-2018.jpg" alt="Sparrho Early Career Research Prize" draggable="false">
+                    <div class="news-date">2018</div>
+                    <span class="news-title">Sparrho Early Career Research Prize</span>
+                  </div>
+                </div>
 
-                <li class="paper" words="add, your, keywords, here"><a href="https://kavlicosmo.uchicago.edu/news/article/ripples-in-space-time-could-provide-clues-to-missing-components-of-the-universe-uchicago-news/">UChicago news article</a> about work with Miguel Zumalacarregui on the new signatures of gravitational wave lensing beyond general relativity </li>
-                </ul>
-
-		<strong>2020</strong><br/>
-		<ul>
-      <li class="paper" words="add, your, keywords, here">Best thesis in theoretical physics from Spanish Royal Society of Physics (<a href="https://rsef.es/images/Fisica/ActaPremiosDFTPfinal_2019.pdf">RSEF</a>) </li>
-      <li class="paper" words="add, your, keywords, here">Enrique Fuentes Quintana Prize best thesis in STEM (<a href="https://www.funcas.es/convocatorias-premios-efq/">Fundacion Funcas</a>) </li>
-      <li class="paper" words="add, your, keywords, here">Extraordinary Doctorate Prize from UAM (<a href="https://uam.es/EscuelaDoctorado/(es_ES)-Premios-_Extraordinarios/1446833384738.htm?language=es_ES&nodepath=Premios%20extraordinarios">UAM</a>) </li>
-    </ul>
-
-    <strong>2019</strong><br/>
-    <ul>
-      <li class="paper" words="add, your, keywords, here">Awarded NASA Einstein Fellowship (<a href="https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program/2019-nhfp-fellows">NHFP 2019 class</a>)</li>
-    </ul>
-
-
-    <strong>2018</strong><br/>
-    <ul>
-      <li class="paper" words="add, your, keywords, here">Sparrho Early Career Research Prize <a href="#"></a> </li>
-    </ul>
-
-    <strong>2017</strong><br/>
-    <ul>
-      <li class="paper" words="add, your, keywords, here">Dark Energy after GW170817 (<a href="https://physics.aps.org/articles/v10/134">Physics Viewpoint</a>) </li>
-    </ul>
+                <h3 class="news-year">2017</h3>
+                <div class="row news-row">
+                  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+                    <a href="https://physics.aps.org/articles/v10/134" target="_blank"><img src="images/news/physics-viewpoint-2017.jpg" alt="Dark Energy after GW170817 (Physics Viewpoint)" draggable="false"></a>
+                    <div class="news-date">Dec. 18, 2017</div>
+                    <a class="news-title" href="https://physics.aps.org/articles/v10/134" target="_blank">Dark Energy after GW170817 (Physics Viewpoint)</a>
+                  </div>
+                </div>
 
             </div>
 

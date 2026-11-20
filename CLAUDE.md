@@ -13,11 +13,20 @@ When the user approves a commit, use:
   git add <file> && git commit -m "<message>" && git push origin master
 
 ## news.html
-- News items are ordered **newest first** within each year block.
-- New items go as the first `<li>` inside the relevant year's `<ul>`.
-- Use this format for each item:
-  `<li class="paper" words="add, your, keywords, here">Text with optional <a href="URL">link</a></li>`
-- If the year doesn't exist yet, add a new `<strong>YEAR</strong><br/><ul>...</ul>` block at the top.
+CoG-style image cards, 2 per row, grouped by year (`<h3 class="news-year">YEAR</h3>` + `<div class="row news-row">`), **newest first** by date.
+- New items go as the first card inside the relevant year's `news-row`. If the year doesn't exist yet, add a new `<h3>` + `news-row` block at the top.
+- Card format:
+  ```html
+  <div class="col-sm-6 news-card" words="add, your, keywords, here">
+    <a href="URL" target="_blank"><img src="images/news/<slug>.jpg" alt="Title" draggable="false"></a>
+    <div class="news-date">Nov. 3, 2026</div>
+    <a class="news-title" href="URL" target="_blank">Title</a>
+    <div class="news-extra">Optional secondary links/text</div>
+  </div>
+  ```
+- **Link:** the card links to the external page (CoG, KU, journal, ...). If there is no external page, the card has no link: drop the `<a>` around the image and use `<span class="news-title">Title</span>`. Do not create local news pages unless the user asks for one.
+- **Date:** use the most precise date available (`Mon. D, YYYY`), in this priority: date on the linked article > date stated in the item itself > date of the commit that added the item (`git log -S"<text>" --reverse -- news.html`).
+- **Image:** 880×600 JPG, quality ~82, saved to `images/news/<slug>.jpg` (center-crop; posters/portrait images are letterboxed on a blurred copy). Take it from the external link (header/og:image of the article, or the matching poster in `images/posters/web/` for events). **If an image cannot be obtained directly from the external link, always ask the user for one** — never substitute a stock or topic image. Until it arrives, a plain grey 880×600 `images/news/placeholder.jpg` can be used for layout checks, but don't commit it. Originals the user provides go in `images/news/originals/` (gitignored).
 
 ## group.html
 Sections in order:
